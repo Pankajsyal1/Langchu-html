@@ -35,24 +35,79 @@ button.navbar-toggler {
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28119, 119, 119, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
 .btn-contact-us {
   text-decoration: underline;
   text-decoration-color: #777;
-  text-underline-offset:6px;
+  text-underline-offset: 6px;
 }
+
 /* *********** Hero Section ***********  */
 
 .hero-home {
-  background: no-repeat center/cover url("../images/home/hero-bg.png");;
+  background: no-repeat center/cover url("../images/home/hero-bg.png");
+  ;
   min-height: 450px;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 30px;
   letter-spacing: 3.6px;
 }
 
 
+.btn {
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  padding: 9px 18px;
+  box-shadow: none;
+}
+
+.btn-light {
+  color: #253A36;
+}
+
+
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #fff;
+}
+
+hr {
+  border-color: rgb(255, 255, 255);
+  margin-block: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+/* *********** Contact Us ***********  */
+.contact-us {
+  background: no-repeat center/cover url("../images/home/contact-us.png");
+  min-height: 350px;
+}
+
+/* *********** Footer ***********  */
+
+.newsletter-form input::placeholder {
+  color: #ccc;
+}
 
 /* *********** Responsive ***********  */
 

@@ -1,0 +1,31 @@
+/* *********** Buttons ***********  */
+.btn {
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  padding: 9px 18px;
+  box-shadow: none;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-light {
+  color: #253A36;
+}
+
+.btn-icon {
+  all: unset;
+  cursor: pointer;
+}
+
+.btn-contact-us {
+  text-decoration: underline;
+  text-decoration-color: #777;
+  text-underline-offset: 6px;
+}

@@ -45,19 +45,40 @@ button.navbar-toggler {
 }
 
 /* *********** Hero Section ***********  */
+.fs-sm {
+  font-size: 14px;
+}
 
-.hero-home {
-  background: no-repeat center/cover url("../images/home/hero-bg.png");
-  ;
-  min-height: 450px;
+.fs-base {
+  font-size: 16px;
+}
+
+.fs-md {
+  font-size: 20px;
+}
+
+.fs-lg {
+  font-size: 24px;
+}
+
+.fs-xl {
+  font-size: 28px;
 }
 
 .fs-xxl {
-  font-size: 30px;
+  font-size: 32px;
   letter-spacing: 3.6px;
 }
 
+a {
+  text-decoration: none;
+}
 
+a:hover {
+  text-decoration: underline;
+}
+
+/* *********** Hero Section ***********  */
 .btn {
   border-radius: 0;
   text-transform: uppercase;
@@ -68,9 +89,29 @@ button.navbar-toggler {
   box-shadow: none;
 }
 
+.btn-primary {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
 .btn-light {
   color: #253A36;
 }
+
+.btn-icon {
+  all: unset;
+  cursor: pointer;
+}
+
+/* *********** Hero Section ***********  */
+
+.hero-home {
+  background: no-repeat center/cover url("../images/home/hero-bg.png");
+  min-height: 450px;
+}
+
+
 
 
 .form-control {
@@ -87,17 +128,13 @@ hr {
   margin-block: 30px;
 }
 
-a {
-  text-decoration: none;
-}
 
-a:hover {
-  text-decoration: underline;
-}
+/* *********** Assurance Quality ***********  */
 
-h6 {
-  font-size: 14px;
-}
+/* .assurance-quality ul {
+  list-style-image: url('../icons/download.svg');
+} */
+
 
 /* *********** Contact Us ***********  */
 .contact-us {

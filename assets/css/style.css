@@ -3,10 +3,12 @@
 @import "typography.css";
 @import "components.css";
 
+/*
+====================================================
+                  Header
+====================================================
+*/
 
-
-
-/* *********** Header *********** */
 .nav-main-links a.active {
   color: #fff !important;
   background: #777777;
@@ -30,33 +32,53 @@ button.navbar-toggler {
   border-width: 2px;
 }
 
+
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28119, 119, 119, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 
+/*
+====================================================
+                  Footer
+====================================================
+*/
+
+.newsletter-form input::placeholder {
+  color: #ccc;
+}
+
+.newsletter-form input {
+  max-width: 350px;
+}
+
+/*
+====================================================
+                    Home Page 
+====================================================
+*/
 
 /* *********** Hero Section ***********  */
 
 .hero-home {
-  background: no-repeat center/cover url("../images/home/hero-bg.png");
+  background:
+    linear-gradient(180deg, #000 0%, #000 13.57%, rgba(0, 0, 0, 0.00) 81.38%),
+    url("../images/home/hero-bg.png") no-repeat center/cover;
   min-height: 450px;
 }
 
-.form-control {
-  border-radius: 0;
-  box-shadow: none;
-}
 
-.form-control:focus {
-  border-color: #fff;
-}
 
 /* *********** Manufacturing Hub ***********  */
-.section-bg {
+.bg-light-brown {
   background-color: #F5F4F0;
-  ;
 }
+
+.bg-brown {
+  background-color: #8C6E51;
+}
+
+
 
 /* *********** how works ***********  */
 
@@ -87,21 +109,135 @@ button.navbar-toggler {
   list-style-image: url('../icons/download.svg');
 } */
 
-
-/* *********** Contact Us ***********  */
 .contact-us {
   background: no-repeat center/cover url("../images/home/contact-us.png");
   min-height: 350px;
 }
 
-/* *********** Footer ***********  */
 
-.newsletter-form input::placeholder {
-  color: #ccc;
+/*
+====================================================
+              Our Product Page
+====================================================
+*/
+
+.our-products .dropdown-menu-dark {
+  --bs-dropdown-bg: #000;
 }
 
-.newsletter-form input {
-  max-width: 350px;
+.our-products .dropdown-toggle::after {
+  all: unset;
+}
+
+.our-products .btn-secondary:focus {
+  background-color: #000 !important;
+  color: white !important;
+}
+
+.our-products .dropdown-menu {
+  top: -4px !important;
+}
+
+.our-products .minus-icon {
+  display: none;
+}
+
+.our-products .btn-secondary:focus .minus-icon {
+  display: inline-block;
+}
+
+.our-products .btn-secondary:focus .plus-icon {
+  display: none;
+}
+
+.landing-concept {
+  background: #F5F4F0 url("../images/products/product-bg.png") no-repeat center/cover padding-box;
+}
+
+
+/*
+====================================================
+                    Projects Page
+====================================================
+*/
+.project-list-wrapper {
+  cursor: pointer;
+}
+
+.view-project-wrapper {
+  visibility: hidden;
+  transition: all 0.01s ease-in-out;
+}
+
+.project-list-wrapper:hover .view-project-wrapper {
+  visibility: visible;
+  transition: all 0.01s ease-in-out;
+}
+
+
+.project-video-wrapper {
+  cursor: pointer;
+}
+
+.play-button {
+  display: none;
+}
+
+.project-video-wrapper:hover .play-button {
+  display: block;
+}
+
+/*
+====================================================
+                    About Page
+====================================================
+*/
+.hero-about {
+  background:
+    linear-gradient(180deg, #000 0%, #000 13.57%, rgba(0, 0, 0, 0.00) 81.38%),
+    url("../images/about/about-bg.png") no-repeat center/cover;
+  min-height: 450px;
+}
+
+.about-contact-form {
+  background: url("../images/about/about-form.png") no-repeat center/cover;
+}
+
+
+.about-contact-form :is(input, textarea),
+.about-contact-form :is(input, textarea):focus {
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  color: #FFF;
+}
+
+
+
+.about-contact-form :is(input, textarea)::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/*
+====================================================
+                  Services Page
+====================================================*/
+.hero-services {
+  background:
+    linear-gradient(180deg, #000 0%, #000 13.57%, rgba(0, 0, 0, 0.00) 81.38%),
+    url("../images/services/services-hero-bg.png") no-repeat center/cover;
+  min-height: 450px;
+}
+
+/*
+====================================================
+              Howit Works Page
+====================================================*/
+.hero-how-works {
+  background:
+    linear-gradient(180deg, #000 0%, rgb(0 0 0 / 40%) 10.57%, rgba(0, 0, 0, 0) 51.38%),
+    url(../images/how-works/banner-how-works.png) no-repeat center/cover;
+  min-height: 450px;
 }
 
 /* *********** Responsive ***********  */

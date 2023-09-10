@@ -98,10 +98,11 @@ button.navbar-toggler {
   display: none;
 }
 
+/* 
 .how-works-cus .col:nth-child(2),
 .how-works-cus .col:nth-child(5) {
   margin-top: 30px;
-}
+} */
 
 /* *********** Assurance Quality ***********  */
 
@@ -205,7 +206,9 @@ button.navbar-toggler {
 
 
 .about-contact-form :is(input, textarea),
-.about-contact-form :is(input, textarea):focus {
+.about-contact-form :is(input, textarea):focus,
+.work-contact-form :is(input, textarea),
+.work-contact-form :is(input, textarea):focus {
   border: 1px solid rgba(255, 255, 255, 0.50);
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(6px);
@@ -214,7 +217,8 @@ button.navbar-toggler {
 
 
 
-.about-contact-form :is(input, textarea)::placeholder {
+.about-contact-form :is(input, textarea)::placeholder,
+.work-contact-form :is(input, textarea)::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -231,13 +235,44 @@ button.navbar-toggler {
 
 /*
 ====================================================
-              Howit Works Page
+              How it Works Page
 ====================================================*/
 .hero-how-works {
   background:
     linear-gradient(180deg, #000 0%, rgb(0 0 0 / 40%) 10.57%, rgba(0, 0, 0, 0) 51.38%),
     url(../images/how-works/banner-how-works.png) no-repeat center/cover;
   min-height: 450px;
+}
+
+.process-how-two {
+  position: relative;
+}
+
+.process-how-two::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 410px;
+  left: 0;
+  right: 0;
+  background-image: url("../images/how-works/before-image.png");
+  margin-block: auto;
+  bottom: 20%;
+}
+
+/*
+====================================================
+                  Works Page
+====================================================*/
+.hero-works {
+  background:
+    linear-gradient(180deg, #000 0%, rgb(0 0 0 / 40%) 10.57%, rgba(0, 0, 0, 0) 51.38%),
+    url(../images/works/works-bg.png) no-repeat center/cover;
+  min-height: 450px;
+}
+
+.work-contact-form {
+  background: url("../images/works/work-contact-form.png") no-repeat center/cover;
 }
 
 /* *********** Responsive ***********  */

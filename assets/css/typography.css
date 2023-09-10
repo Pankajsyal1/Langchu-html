@@ -21,6 +21,7 @@ body {
 
 .fs-base {
   font-size: 16px;
+  line-height: 24px;
 }
 
 .fs-md {
@@ -55,6 +56,11 @@ body {
   letter-spacing: 3.5px;
 }
 
+.fs-6xl {
+  font-size: 150px;
+  letter-spacing: -3px;
+}
+
 /* Anchor Tag  */
 a {
   text-decoration: none;
@@ -80,8 +86,22 @@ hr {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 200;
+  text-edge: cap;
+  leading-trim: both;
 }
 
+
+.gradient-light-text {
+  opacity: 0.5;
+  background: linear-gradient(180deg, #FFF 36.36%, rgba(255, 255, 255, 0.00) 121.72%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 200;
+  text-edge: cap;
+  leading-trim: both;
+}
 
 .line-clamp {
   display: -webkit-box;

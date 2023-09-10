@@ -141,9 +141,9 @@ footer .form-control:focus {
 
 .overrelay-image {
   background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 80.74%);
-  background-clip: text;
+  /* background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 
@@ -167,7 +167,7 @@ footer .form-control:focus {
   border-radius: 0;
   border-bottom: 3px solid transparent;
   font-weight: 600;
-  margin-bottom: -2px;
+  /* margin-bottom: -2px; */
 }
 
 .nav-pills .nav-link.active {
@@ -179,4 +179,10 @@ footer .form-control:focus {
 
 .tablist-wrapper {
   max-width: 500px;
+}
+
+@media all and (max-width:575px) {
+  .btn {
+    font-size: 12px;
+  }
 }
